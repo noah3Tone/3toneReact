@@ -17,7 +17,7 @@ const LoginAPI = (props) => {
             const url = 'https://www.3tonemusic.com/?rest_route=/simple-jwt-login/v1/auth' // http://178.62.64.31 http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth
             fetch(url, {
                 method: 'POST',
-                body: formData
+                body: JSON.stringify(formData)
             })
             .then((response) => response.json())
             .then((data) => {
