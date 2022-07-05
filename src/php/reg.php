@@ -7,7 +7,7 @@ $user_login = $_POST['user'];
 //add auth key
 $authkey = '12345Six';
 
-$url = 'http://localhost:8888/?rest_route=/simple-jwt-login/v1/users&email=' . $email . '&password=' . $password . '&authkey=' . $authkey;
+$url = 'http://178.62.64.31/?rest_route=/simple-jwt-login/v1/users&email=' . $email . '&password=' . $password . '&authkey=' . $authkey; //can add username 'user' here too //http://localhost:8888/?rest_route=/simple-jwt-login/v1/users&email='
 
 //send post signup to wp
 
@@ -20,10 +20,12 @@ curl_close($ch);
 
 $server_output_decode = json_decode($server_output);
 
+//send auth to wp => result to react
+
 if (isset($server_output_decode->success) && $server_output_decode->success ==0) {
     echo $server_output;
 } else {
-    $authUrl = 'http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth&email=' . $email . '&password=' . $password ;
+    $authUrl = 'http://178.62.64.31/?rest_route=/simple-jwt-login/v1/auth&email=' . $email . '&password=' . $password ; //http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth&email=
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $authUrl);
     curl_setopt($ch, CURLOPT_POST, true);
@@ -33,5 +35,5 @@ if (isset($server_output_decode->success) && $server_output_decode->success ==0)
     echo $server_output;
 }
 
-//send auth to wp
+
 ?>

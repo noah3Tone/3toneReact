@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+Noah's devlog:
+
+Sarting off with this article:
+https://mikejolley.com/2021/03/02/headless-wordpress-cookie-based-login-using-graphql/
+
+Suggests to use the GraphQL plugin for wordpress to streamline querying the API.
+
+Saves the login session using cookies, as they are more secure than JSON web tokens, which can be be accessed by javascript if held in local or session storage.
+Will check on this concept later as the directions in the article were very vague.
+
+
+Using JWT autentication:
+starting with this repo:
+ https://github.com/DoubleNemesis/ReactWordpressRestApi
+
+Simple JWT PLugin
+potential security issue here in SignupAPI + LoginAPI. But a JWT can be stored in a httpOnly cookie, which can then be used to persist login, see https://blog.logrocket.com/jwt-authentication-best-practices/

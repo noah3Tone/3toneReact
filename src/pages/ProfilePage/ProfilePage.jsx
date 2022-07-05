@@ -12,7 +12,7 @@ const ProfilePage = (props) => {
         let userJWT = localStorage.getItem('jwt') || '';
         console.log(userJWT); //!
         if(userJWT.length>0){
-            let url = `http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth/validate&JWT=${userJWT}`
+            let url = `https://www.3tonemusic.com/?rest_route=/simple-jwt-login/v1/auth/validate&JWT=${userJWT}` //should default to a GET //http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth/validate&JWT=
             .then(response => Response.json())
             .then(data=> {
                 if(data['success']===true){ ///or status 200/201?
