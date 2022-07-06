@@ -8,7 +8,7 @@ const LoginAPI = (props) => {
 
     useEffect(()=>{
         if(props.APIDetailsLogin.email.length > 0){
-            
+            console.log('login API')
             let formData = new FormData();
             //formData.append('user', props.APIDetailsLogin.user)
             formData.append('email', props.APIDetailsLogin.email)
@@ -17,7 +17,7 @@ const LoginAPI = (props) => {
             const url = 'https://www.3tonemusic.com/?rest_route=/simple-jwt-login/v1/auth' // http://178.62.64.31 http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth
             fetch(url, {
                 method: 'POST',
-                body: JSON.stringify(formData)
+                body: formData //JSON.stringify()?
             })
             .then((response) => response.json())
             .then((data) => {
@@ -42,7 +42,7 @@ const LoginAPI = (props) => {
                 if(response.status== '200'){
                     props.setIsLoggedIn(true)
                     props.setUsername(props.APIDetailsLogin.user)
-                    window.location.replace('http://noah3tone.github.io/3tonereact/#/')//URL
+                    window.location.replace('https://noah3tone.github.io/3tonereact/#/')//URL
                 } else {
                     console.log('there was an error')
                 }

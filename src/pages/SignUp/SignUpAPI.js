@@ -42,7 +42,7 @@ const SignUpAPI = (props) => {
                 if(response.status== '200'){
                     props.setIsLoggedIn(true)
                     props.setUsername(props.APIDetailsSignUp.user)
-                    window.location.replace('http://noah3tone.github.io/3tonereact/#/')//URL "http://noah3tone.github.io/3tonereact" http://localhost:3000/      go to /profile
+                    window.location.replace('https://noah3tone.github.io/3tonereact/#/')//URL "http://noah3tone.github.io/3tonereact" http://localhost:3000/      go to /profile
                 } else {
                     console.log('there was an error')
                 }

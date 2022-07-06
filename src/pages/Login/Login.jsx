@@ -26,7 +26,7 @@ function Login(props) {
     function handleSubmit() {
         setAPIDetailsLogin({ ...loginDetails }) //check i need the ...here
     }
-    console.log(loginDetails)
+    //console.log(loginDetails)
     console.log(APIDetailsLogin)
     return (
         <>
