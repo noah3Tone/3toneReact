@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 
 const LoginAPI = (props) => {
 
-    const {urlToLogIn, setUrlToLogin} = useState('')
+    const [urlToLogIn, setUrlToLogin] = useState('')
 
     useEffect(()=>{
         if(props.APIDetailsLogin.user.length > 0){

@@ -5,10 +5,12 @@ import LoginAPI from './LoginAPI';
 function Login(props) {
     const [APIDetailsLogin, setAPIDetailsLogin] = useState({
         user: '',
+        email: '',
         pass: '',
       })
     const [loginDetails, setLoginDetails] = useState({
         user: '',
+        email: '',
         pass: '',
     })
 
@@ -24,7 +26,8 @@ function Login(props) {
     function handleSubmit() {
         setAPIDetailsLogin({ ...loginDetails }) //check i need the ...here
     }
-    console.log(loginDetails)
+    //console.log(loginDetails)
+    console.log(APIDetailsLogin)
     return (
         <>
             <div className="App">
@@ -32,7 +35,7 @@ function Login(props) {
                     <h2>Login</h2>
                     <p>{props.serverMessage}</p>
                     <div className="login">
-                        <input type="text" placeholder="User Name" name="user" value={loginDetails.user} onChange={handleChange} />
+                        <input type="text" placeholder="Email" name="email" value={loginDetails.email} onChange={handleChange} />
                         <input type="password" placeholder="Password" name="pass" value={loginDetails.pass} onChange={handleChange} />
                         <input type="submit" value="Go" onClick={handleSubmit} />
                     </div>

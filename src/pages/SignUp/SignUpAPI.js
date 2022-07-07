@@ -4,17 +4,17 @@ import React, {useState, useEffect} from 'react';
 
 const SignUpAPI = (props) => {
 
-    const {urlToSignIn, setUrlToSignIn} = useState('')
+    const [urlToSignIn, setUrlToSignIn] = useState('')
 
     useEffect(()=>{
-        if(props.APIDetailsSignUp.user.length > 0){
+        if(props.APIDetailsSignUp.email.length > 0){
             
             let formData = new FormData();
             formData.append('user', props.APIDetailsSignUp.user)
             formData.append('email', props.APIDetailsSignUp.email)
             formData.append('pass', props.APIDetailsSignUp.pass)
 
-            const url = 'http://178.62.64.31/reg.php'//url to reg file on server http://178.62.64.31  http://localhost:8888
+            const url = 'http://localhost:8888/reg.php'//url to reg file on server http://178.62.64.31  http://localhost:8888
             fetch(url, {
                 method: 'POST',
                 body: formData
