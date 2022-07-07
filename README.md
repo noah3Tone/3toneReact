@@ -90,3 +90,6 @@ Pages currently using the JWT method, SignUp/SignUpAPI, Login/LoginAPI, and Prof
 Currently getting CORS errors from the main site, so I don't think the reg.php there is being reached. I think a http header of:  Access-Control-Allow-Origin: * is needed somewhere, but I'm not too sure.
 
 To see site with calls to the live site, see branch 'doing-it-live'. A build of this branch is on github pages at https://noah3tone.github.io/3tonereact/
+to make a new build: 
+npm run build
+npm run deploy
