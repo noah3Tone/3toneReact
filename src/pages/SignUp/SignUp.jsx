@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SignUpAPI from './SignUpAPI';
 
-function SingUp(props) {
+function SignUp(props) {
     const [APIDetailsSignUp, setAPIDetailsSignUp] = useState({
         user: '',    
         email: '',
@@ -48,4 +48,4 @@ function SingUp(props) {
 
 }
 
-export default SingUp
+export default SignUp

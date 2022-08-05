@@ -7,23 +7,23 @@ const LoginAPI = (props) => {
     const [urlToLogIn, setUrlToLogin] = useState('')
 
     useEffect(()=>{
-        if(props.APIDetailsLogin.user.length > 0){
-            
+        if(props.APIDetailsLogin.email.length > 0){
+            console.log('login API')
             let formData = new FormData();
             //formData.append('user', props.APIDetailsLogin.user)
             formData.append('email', props.APIDetailsLogin.email)
-            formData.append('pass', props.APIDetailsLogin.pass)
+            formData.append('password', props.APIDetailsLogin.pass) //pass/password?
 
-            const url = 'http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth' //url to reg file on server http://178.62.64.31
+            const url = 'https://www.3tonemusic.com/?rest_route=/simple-jwt-login/v1/auth' // http://178.62.64.31 http://localhost:8888/?rest_route=/simple-jwt-login/v1/auth
             fetch(url, {
                 method: 'POST',
-                body: formData
+                body: formData //JSON.stringify()?
             })
-            .then((response)=> response.json())
-            .then((data)=>{
-                if(data['success']===true){
+            .then((response) => response.json())
+            .then((data) => {
+                if (data['success'] == true) {
                     localStorage.setItem('jwt', data['data']['jwt']) //!!!!!!!!!!potential security issue here, but JWT can be converted into a httpOnly cookie, which can then be used to persist login, see https://blog.logrocket.com/jwt-authentication-best-practices/
-                    setUrlToLogin(`http://localhost:8888/?rest_route=/simple-jwt-login/v1/autologin&JWT=${data['data']['jwt']}`);
+                    setUrlToLogin(`https://www.3tonemusic.com/?rest_route=/simple-jwt-login/v1/autologin&JWT=${data['data']['jwt']}`); //http://localhost:8888/?rest_route=/simple-jwt-login/v1/autologin&JWT=
                     //console.log(data)///!!!!!!!!!remove this later
                 } else {
                     console.log(data)///!!!!!!!!!remove this later
@@ -42,7 +42,7 @@ const LoginAPI = (props) => {
                 if(response.status== '200'){
                     props.setIsLoggedIn(true)
                     props.setUsername(props.APIDetailsLogin.user)
-                    window.location.replace('http://localhost:3000/#/')//URL
+                    window.location.replace('https://noah3tone.github.io/3tonereact/#/')//URL
                 } else {
                     console.log('there was an error')
                 }

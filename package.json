@@ -1,6 +1,6 @@
 {
   "name": "3tonemusic",
-  "homepage": "http://178.62.64.31/react",
+  "homepage": "https://noah3tone.github.io/3tonereact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
