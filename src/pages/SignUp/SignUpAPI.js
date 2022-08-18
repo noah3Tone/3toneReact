@@ -21,8 +21,6 @@ const SignUpAPI = (props) => {
 
             const url = 'https://www.3tonemusic.com/reg.php'//url to reg file on server http://178.62.64.31  http://localhost:8888
 
-            const url = 'http://localhost:8888/reg.php'//url to reg file on server http://178.62.64.31  http://localhost:8888
-
             fetch(url, {
                 method: 'POST',
                 body: formData

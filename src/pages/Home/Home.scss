@@ -1,0 +1,79 @@
+@use "../../sass/variables.scss" as *;
+
+.homepage-container{
+  background-color: #000;
+  font-family: "Futura Bold";
+}
+.homepage-top{
+    position: relative;
+    display: inline-block;
+    padding-top: 5%;
+    width: 100vw;
+    background-color: #000;
+    height: 80vh;
+    .homepage-top__title-container{
+      margin-left: 5vw;
+      color: white;
+      @include xl {
+        width: 60%;
+      }
+      @include lm {
+        width: 50%;
+      }
+      @include xs{
+        width: 100%;
+      }
+    }
+    .homepage-top__title-container__title{
+      @include xl{
+        text-transform: uppercase;
+        position: relative;
+        z-index: 8;
+        //width: 50%;
+        font-size: 7rem;
+        line-height: 6.6rem;
+        //height: 65px;
+        margin-bottom: 0;
+        margin-top: 2.4rem;
+        margin-right: 0;
+      }
+      @include lm{
+        font-size: 5rem;
+        line-height: 4rem;
+        //height: 5.05vw;
+        margin-top: 0;
+      }
+      @include xs{
+        width: 100%;
+        margin-top: 0;
+        font-size: 11vw;
+        line-height: 10vw;
+        //height: 10vw;
+      }
+    }
+    .homepage-top__title-container__subtitle{
+      font-family: "Futura Medium Italic";
+      font-size: 21px;
+      font-weight: 100;
+    }
+}
+.homepage-mid{
+  text-align: center;
+  background-color: #000;
+  width: 100%;
+  
+  .homepage-mid__title-container{
+    color: white;
+    margin-bottom: 50px;
+    .homepage-mid__title-container__title{
+      font-size: 5rem;
+    }
+  }
+  .product-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 9%;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../../sass/variables.scss" as *;
+
+.app{
+    background-color: black;
+    padding-top: 50px;
+}
+.app__header{
+    text-align: center;
+    color: white;
+    font-family: "Futura Bold";
+    h2{
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+}

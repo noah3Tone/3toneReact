@@ -27,3 +27,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+/*
+@font-face {
+  font-family: "Futura Light Italic";
+  src: url("fonts/Futura-Light-Italic.ttf") format("truetype");
+}
+*/

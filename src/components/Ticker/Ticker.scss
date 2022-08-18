@@ -1,0 +1,43 @@
+/* (A) FIXED WRAPPER */
+.ticker:hover{
+    cursor: pointer;
+}
+.ticker{
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+}
+a .ticker__slider{
+    width: 100%;
+    display: flex;
+}
+a .ticker__slider div {
+    //overflow: hidden; /* HIDE SCROLL BAR */
+    background: white;
+    white-space: nowrap;
+    z-index: 9;
+    bottom: 0;
+    animation: tickerh 40s linear infinite;
+    animation-delay: -40s;
+}
+a .ticker__slider div:nth-child(1) {
+    animation: tickerh2 40s linear infinite;
+    animation-delay: -20s;
+}
+.hitem{
+    text-transform: uppercase;
+    color: black;
+}
+   
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+  @keyframes tickerh {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes tickerh2 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200%); }
+  }
+  
+  //.hmove:hover { animation-play-state: paused; }

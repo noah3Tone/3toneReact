@@ -60,6 +60,4 @@
  * @license MIT
  */
 
-//!
-
 //!!!!!!!!!!potential security issue here, but JWT can be converted into a httpOnly cookie, which can then be used to persist login, see https://blog.logrocket.com/jwt-authentication-best-practices/
