@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/3tonereact/static/css/main.b4ebfdde.css",
+    "main.js": "/3tonereact/static/js/main.9d343f44.js",
+    "static/js/787.1d56e51b.chunk.js": "/3tonereact/static/js/787.1d56e51b.chunk.js",
+    "static/media/Asset23n.png": "/3tonereact/static/media/Asset23n.2b650ad1d95265b83fb5.png",
+    "static/media/Asset20n.png": "/3tonereact/static/media/Asset20n.bd289028163fd0b9f41a.png",
+    "static/media/Asset22n.png": "/3tonereact/static/media/Asset22n.22cb9355bdca6f12b281.png",
+    "static/media/Asset25n.png": "/3tonereact/static/media/Asset25n.2289e4b7532641b18a09.png",
+    "static/media/Asset21n.png": "/3tonereact/static/media/Asset21n.7aef1fd489bbf9bda185.png",
+    "static/media/asset-scribble.png": "/3tonereact/static/media/asset-scribble.bd7c5f8dcf8d8b06860d.png",
+    "static/media/Futura Medium Italic.ttf": "/3tonereact/static/media/Futura Medium Italic.6180d54a312d36bd0924.ttf",
+    "static/media/Futura-Light-Italic.ttf": "/3tonereact/static/media/Futura-Light-Italic.7a38f125834cd8b1f80c.ttf",
+    "static/media/Futura-Bold.ttf": "/3tonereact/static/media/Futura-Bold.7089da4f869638238f6d.ttf",
+    "static/media/artistandlabelservices.png": "/3tonereact/static/media/artistandlabelservices.1ec34044a0b111096f56.png",
+    "index.html": "/3tonereact/index.html",
+    "main.b4ebfdde.css.map": "/3tonereact/static/css/main.b4ebfdde.css.map",
+    "main.9d343f44.js.map": "/3tonereact/static/js/main.9d343f44.js.map",
+    "787.1d56e51b.chunk.js.map": "/3tonereact/static/js/787.1d56e51b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4ebfdde.css",
+    "static/js/main.9d343f44.js"
+  ]
+}
