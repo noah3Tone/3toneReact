@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3tonereact/static/css/main.b4ebfdde.css",
-    "main.js": "/3tonereact/static/js/main.bb25b53c.js",
+    "main.js": "/3tonereact/static/js/main.08e9aac9.js",
     "static/js/787.1d56e51b.chunk.js": "/3tonereact/static/js/787.1d56e51b.chunk.js",
     "static/media/Asset23n.png": "/3tonereact/static/media/Asset23n.2b650ad1d95265b83fb5.png",
     "static/media/Asset20n.png": "/3tonereact/static/media/Asset20n.bd289028163fd0b9f41a.png",
@@ -15,11 +15,11 @@
     "static/media/artistandlabelservices.png": "/3tonereact/static/media/artistandlabelservices.1ec34044a0b111096f56.png",
     "index.html": "/3tonereact/index.html",
     "main.b4ebfdde.css.map": "/3tonereact/static/css/main.b4ebfdde.css.map",
-    "main.bb25b53c.js.map": "/3tonereact/static/js/main.bb25b53c.js.map",
+    "main.08e9aac9.js.map": "/3tonereact/static/js/main.08e9aac9.js.map",
     "787.1d56e51b.chunk.js.map": "/3tonereact/static/js/787.1d56e51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4ebfdde.css",
-    "static/js/main.bb25b53c.js"
+    "static/js/main.08e9aac9.js"
   ]
 }

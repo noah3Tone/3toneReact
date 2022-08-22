@@ -7,6 +7,7 @@ import img4 from "../../assets/img/Asset23n.png"
 import img5 from "../../assets/img/Asset25n.png"
 //import scribble from "../../assets/img/asset-scribble.png"
 import Product from "../../components/Product/Product";
+import Products from "../../components/Products/Products";
 
 const Home = () => {
 
@@ -23,6 +24,9 @@ const Home = () => {
             <div className="homepage-mid">
                 <div className="homepage-mid__title-container">
                     <div className="homepage-mid__title-container__title">PRICING</div>
+                </div>
+                <div className="product-container">
+                    <Products />
                 </div>
                 <div className="product-container">
                         <Product name="LITE" price="£24.99" isSubscription="true" />

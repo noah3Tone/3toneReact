@@ -1,5 +1,5 @@
 import {React, useState} from "react";
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Link, Route, Routes} from "react-router-dom"; //BrowserRouter
 import './App.css';
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
@@ -18,7 +18,7 @@ function App() {
   console.log(page);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header username={username} isLoggedIn={isLoggedIn} serverMessage={serverMessage} page={page}>
         <nav>
           <Link to="/my-account">My Account</Link>
@@ -29,7 +29,7 @@ function App() {
 
       <Routes>
         <Route path="/success" element={<Success />} />
-        <Route exact path="/" element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} username={username} setUsername={setUsername} serverMessage={serverMessage} setServerMessage={setServerMessage}/>}/>
+        <Route exact path="/3tonereact" element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} username={username} setUsername={setUsername} serverMessage={serverMessage} setServerMessage={setServerMessage}/>}/>
         <Route exact path="/Home" element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} username={username} setUsername={setUsername} serverMessage={serverMessage} setServerMessage={setServerMessage}/>}/>
         <Route path="/Cart" element={<Cart isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} username={username} setUsername={setUsername} serverMessage={serverMessage} setServerMessage={setServerMessage}/>}/>
         <Route exact path="/my-account" element={<ProfilePage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} username={username} setUsername={setUsername} serverMessage={serverMessage} setServerMessage={setServerMessage}/>}/>
